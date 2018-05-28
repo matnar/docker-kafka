@@ -41,5 +41,17 @@ docker kill kafka
 docker network rm kafkanet
 ```
 
+## Launch containers using Docker Compose
 Alternatively, you can rely on Docker Compose to more easily launch your Kafka cluster. 
 For this purpose, we provide an simple docker-compose.yml file within the repository.
+
+To launch the composition, you can run the following command: 
+```
+docker-compose up -f docker-compose.yml -d 
+```
+
+
+To stop the composiion, you can run the following command: 
+```
+docker-compose down -f docker-compose.yml
+```
